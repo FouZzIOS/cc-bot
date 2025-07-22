@@ -172,7 +172,6 @@ def get_random_proxy():
         return None
 
 def get_new_auth():
-    print("[DEBUG] Running get_new_auth()")
     """Get fresh authorization tokens"""
     domain_url = get_domain_url()  # Read fresh domain URL
     cookies_1 = get_cookies_1()    # Read fresh cookies
@@ -186,8 +185,6 @@ def get_new_auth():
         proxies=proxy,
         verify=False
     )
-    print(f"[DEBUG] Response status: {response.status_code}")
-    print("[DEBUG] Response snippet:", response.text[:1000])
     if response.status_code == 200:
         # Get add_nonce
         add_nonce = re.findall('name="woocommerce-add-payment-method-nonce" value="(.*?)"', response.text)
