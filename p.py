@@ -186,8 +186,8 @@ def get_new_auth():
         proxies=proxy,
         verify=False
     )
-    print(f\"[DEBUG] Response status: {response.status_code}\")
-    print(\"[DEBUG] Response snippet:\", response.text[:1000])
+    print(f"[DEBUG] Response status: {response.status_code}")
+    print("[DEBUG] Response snippet:", response.text[:1000])
     if response.status_code == 200:
         # Get add_nonce
         add_nonce = re.findall('name="woocommerce-add-payment-method-nonce" value="(.*?)"', response.text)
