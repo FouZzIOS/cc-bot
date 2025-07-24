@@ -177,11 +177,12 @@ def get_new_auth():
     cookies_1 = get_cookies_1()    # Read fresh cookies
     headers = get_headers()        # Get headers with current domain
     
-    proxy = None
+    proxy = get_random_proxy()
     response = requests.get(
         f'{domain_url}/my-account/add-payment-method/',
         cookies=cookies_1,
         headers=headers,
+        proxies=proxy,
         verify=False
     )
     if response.status_code == 200:
