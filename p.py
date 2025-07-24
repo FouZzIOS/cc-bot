@@ -438,7 +438,7 @@ def check_card(cc_line):
 
 𝗧𝗼𝗼𝗸 {elapsed_time:.2f} 𝘀𝗲𝗰𝗼𝗻𝗱𝘀 [ 0 ]
 
-𝗕𝗼𝘁 𝗯𝘆 : @KanhuCharanaPradhan
+𝗕𝗼𝘁 𝗯𝘆 : @FouZzIOS
 """
         return response_text
 
