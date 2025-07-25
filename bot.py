@@ -141,7 +141,7 @@ def b3_handler(msg):
 ⟡ ᴏɴʟʏ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴍᴇᴍʙᴇʀꜱ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ
 
 ✧ ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ ᴀᴅᴍɪɴ ꜰᴏʀ ᴀᴜᴛʜᴏʀɪᴢᴀᴛɪᴏɴ
-✧ ᴀᴅᴍɪɴ: @KanhuCharanaPradhan""")
+✧ ᴀᴅᴍɪɴ: @FouZzIOS""")
 
     cc = None
 
@@ -205,7 +205,7 @@ def mb3_handler(msg):
 ⟡ ᴏɴʟʏ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴍᴇᴍʙᴇʀꜱ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ
 
 ✧ ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ ᴀᴅᴍɪɴ ꜰᴏʀ ᴀᴜᴛʜᴏʀɪᴢᴀᴛɪᴏɴ
-✧ ᴀᴅᴍɪɴ: @KanhuCharanaPradhan""")
+✧ ᴀᴅᴍɪɴ: @FouZzIOS""")
 
     if not msg.reply_to_message:
         return bot.reply_to(msg, "✦━━━[ ᴡʀᴏɴɢ ᴜꜱᴀɢᴇ ]━━━✦\n\n"
