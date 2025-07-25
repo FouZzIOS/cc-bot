@@ -9,7 +9,7 @@ from p import check_card  # Make sure check_card(cc_line) is in p.py
 
 # BOT Configuration
 BOT_TOKEN = '7697582761:AAHTBZzXi1JPR31MzVCL8jyc6RTA3TRd3Tw'   
-ADMIN_IDS = [1561415968, 5757559957, 1313357202, 5801557179]
+ADMIN_ID = 1313357202  # Replace with your Telegram user ID (int)
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
@@ -29,7 +29,7 @@ def save_auth(data):
         json.dump(data, f)
 
 def is_authorized(chat_id):
-    if chat_id in ADMIN_IDS:
+    if chat_id == ADMIN_ID:
         return True
     if str(chat_id) in AUTHORIZED_USERS:
         expiry = AUTHORIZED_USERS[str(chat_id)]
