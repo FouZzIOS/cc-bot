@@ -8,8 +8,8 @@ from datetime import datetime
 from p import check_card  # Make sure check_card(cc_line) is in p.py
 
 # BOT Configuration
-BOT_TOKEN = '8078278899:AAGr1Kc17CC-9s7VCNKG5ZiTHH3h3gjzVYw'   
-ADMIN_ID = 1313357202  # Replace with your Telegram user ID (int)
+BOT_TOKEN = '7697582761:AAHTBZzXi1JPR31MzVCL8jyc6RTA3TRd3Tw'   
+ADMIN_IDS = [1561415968, 5757559957, 1313357202, 5801557179]
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
@@ -29,7 +29,7 @@ def save_auth(data):
         json.dump(data, f)
 
 def is_authorized(chat_id):
-    if chat_id == ADMIN_ID:
+    if chat_id in ADMIN_IDS:
         return True
     if str(chat_id) in AUTHORIZED_USERS:
         expiry = AUTHORIZED_USERS[str(chat_id)]
@@ -88,7 +88,7 @@ def start_handler(msg):
 ⟡ ᴜꜱᴇ /b3 ᴛᴏ ᴄʜᴇᴄᴋ ꜱɪɴɢʟᴇ ᴄᴀʀᴅ
 ⟡ ꜰᴏʀ ᴍᴀꜱꜱ ᴄʜᴇᴄᴋ, ʀᴇᴘʟʏ ᴄᴄ ꜰɪʟᴇ ᴡɪᴛʜ /mb3
 
-ʙᴏᴛ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @FouZzIOS""")
+ʙᴏᴛ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @KanhuCharanaPradhan""")
 
 @bot.message_handler(commands=['auth'])
 def authorize_user(msg):
@@ -141,7 +141,7 @@ def b3_handler(msg):
 ⟡ ᴏɴʟʏ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴍᴇᴍʙᴇʀꜱ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ
 
 ✧ ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ ᴀᴅᴍɪɴ ꜰᴏʀ ᴀᴜᴛʜᴏʀɪᴢᴀᴛɪᴏɴ
-✧ ᴀᴅᴍɪɴ: @FouZzIOS""")
+✧ ᴀᴅᴍɪɴ: @KanhuCharanaPradhan""")
 
     cc = None
 
@@ -205,7 +205,7 @@ def mb3_handler(msg):
 ⟡ ᴏɴʟʏ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴍᴇᴍʙᴇʀꜱ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ
 
 ✧ ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ ᴀᴅᴍɪɴ ꜰᴏʀ ᴀᴜᴛʜᴏʀɪᴢᴀᴛɪᴏɴ
-✧ ᴀᴅᴍɪɴ: @FouZzIOS""")
+✧ ᴀᴅᴍɪɴ: @KanhuCharanaPradhan""")
 
     if not msg.reply_to_message:
         return bot.reply_to(msg, "✦━━━[ ᴡʀᴏɴɢ ᴜꜱᴀɢᴇ ]━━━✦\n\n"
