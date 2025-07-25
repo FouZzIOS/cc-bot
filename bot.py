@@ -88,7 +88,7 @@ def start_handler(msg):
 ⟡ ᴜꜱᴇ /b3 ᴛᴏ ᴄʜᴇᴄᴋ ꜱɪɴɢʟᴇ ᴄᴀʀᴅ
 ⟡ ꜰᴏʀ ᴍᴀꜱꜱ ᴄʜᴇᴄᴋ, ʀᴇᴘʟʏ ᴄᴄ ꜰɪʟᴇ ᴡɪᴛʜ /mb3
 
-ʙᴏᴛ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @KanhuCharanaPradhan""")
+ʙᴏᴛ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @🄵🄾🅄🅉🅉🄸🄾🅂""")
 
 @bot.message_handler(commands=['auth'])
 def authorize_user(msg):
@@ -141,7 +141,7 @@ def b3_handler(msg):
 ⟡ ᴏɴʟʏ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴍᴇᴍʙᴇʀꜱ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ
 
 ✧ ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ ᴀᴅᴍɪɴ ꜰᴏʀ ᴀᴜᴛʜᴏʀɪᴢᴀᴛɪᴏɴ
-✧ ᴀᴅᴍɪɴ: @FouZzIOS""")
+✧ ᴀᴅᴍɪɴ: @🄵🄾🅄🅉🅉🄸🄾🅂""")
 
     cc = None
 
