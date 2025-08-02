@@ -8,7 +8,7 @@ from datetime import datetime
 from p import check_card  # Make sure check_card(cc_line) is in p.py
 
 # BOT Configuration
-BOT_TOKEN = '8078278899:AAGr1Kc17CC-9s7VCNKG5ZiTHH3h3gjzVYw'   
+BOT_TOKEN = ''   
 ADMIN_ID = 1313357202  # Replace with your Telegram user ID (int)
 
 bot = telebot.TeleBot(BOT_TOKEN)
@@ -315,3 +315,4 @@ def mb3_handler(msg):
 
 # ---------------- Start Bot ---------------- #
 bot.infinity_polling()
+
